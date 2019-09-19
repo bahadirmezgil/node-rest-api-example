@@ -1,0 +1,40 @@
+{
+  "name": "node_rest_api",
+  "version": "1.0.0",
+  "description": "Node REST API example",
+  "main": "server.js",
+  "scripts": {
+    "start": "pm2 start server.js --watch --name node_rest_api",
+    "dev": "pm2 delete -s node_rest_api || : && kill -9 $(lsof -i tcp:3000 | egrep -v COMMAND | grep node | awk '{print $2}' | sort -n | uniq) || : && pm2 start server.js --no-daemon --watch --name node_rest_api",
+    "test": "jest  --watchAll --verbose --coverage --runInBand"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "author": "bahadir mezgil",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^3.18.0",
+    "eslint-config-airbnb-base": "^11.1.1",
+    "eslint-plugin-security": "^1.4.0",
+    "jest": "^24.5.0"
+  },
+  "dependencies": {
+    "config": "^3.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^7.0.0",
+    "eslint-plugin-import": "^2.16.0",
+    "express": "^4.16.4",
+    "express-async-errors": "^3.1.1",
+    "express-rate-limit": "^3.4.0",
+    "helmet": "^3.16.0",
+    "joi": "^14.3.1",
+    "moment": "^2.24.0",
+    "mongoose": "^5.4.19",
+    "morgan": "^1.9.1",
+    "supertest": "^4.0.2",
+    "swagger-jsdoc": "^3.2.9",
+    "swagger-ui-express": "^4.0.2",
+    "winston": "^3.2.1"
+  }
+}

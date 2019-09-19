@@ -1,0 +1,26 @@
+{
+  "General": {
+    "serviceName": "node rest api example"
+  },
+  "DB": {
+    "url": "mongodb://dbUser:dbPassword1@ds249623.mlab.com:49623/getir-case-study"
+  },
+  "Log": {
+    "logFile": "logfile.log",
+    "uncExcFile": "uncaughtExceptions.log"
+  },
+  "Language": {
+    "supportedLangs": "en,tr",
+    "defaultLang": "en"
+  },
+  "Swagger": {
+    "swaggerDefinition": {
+      "info": {
+        "title": "Node REST API Example",
+        "version": "1.0.0",
+        "description": "Node REST API Example"
+      }
+    },
+    "apis": ["./routes/*.js"]
+  }
+}
