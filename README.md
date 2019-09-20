@@ -1,6 +1,8 @@
 # node-rest-api-example
 This project is a REST API in Node.js
 
+In order to run the project on your machine:
+
 1)Download the zip.
 
 2)Extract it.
