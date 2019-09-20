@@ -28,5 +28,5 @@ NOTE: You do not have to create .env file. The only reason can be to override th
 
 9)Run all the tests: $npm test
 
-When the server is running, you can see the API documentation and try it from browser by Swagger UI:
+When the server is running, you can see the API documentation and try the API on your browser thanks to Swagger UI:
 http://localhost:3000/api/swagger/api-docs/
