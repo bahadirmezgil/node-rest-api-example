@@ -14,7 +14,7 @@
   "author": "bahadir mezgil",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^3.18.0",
+    "eslint": "^4.18.2",
     "eslint-config-airbnb-base": "^11.1.1",
     "eslint-plugin-security": "^1.4.0",
     "jest": "^24.5.0"
