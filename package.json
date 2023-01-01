@@ -20,7 +20,7 @@
     "jest": "^24.5.0"
   },
   "dependencies": {
-    "config": "^3.0.1",
+    "config": "^3.3.8",
     "cors": "^2.8.5",
     "dotenv": "^7.0.0",
     "eslint-plugin-import": "^2.16.0",
